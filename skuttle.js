@@ -47,3 +47,38 @@ pull(
   )
 
 // stream all messages for a particular keypair.
+var ssbFeed = require('ssb-feed')
+var ssbKeys = require('ssb-keys')
+
+// create the new feed
+var alice = ssbFeed(sbot, ssbKeys.generate())
+
+// Post to alice's feed
+alice.publish({
+  type: 'post',
+  text: 'hello world, I am alice.'
+}, function (err) { console.log(err) })
+
+var hash = ssbKeys.hash(new Buffer('snehkoul', 'hex'))
+console.log("hey"+ hash)
+// var k = ssbKeys.createSync('./dhh.txt')
+// console.log(k) /* => {
+//   id: String,
+//   public: String,
+//   private: String
+// }*/
+var k = ssbKeys.generate()
+// var authRequest = ssbKeys.createAuth(k, 'client')
+// console.log(authRequest) /* => {
+//   role: 'client',
+//   ts: Number,
+//   public: String,
+//   signature: ...
+// } */
+
+// var obj = ssbKeys.signObj(k, hmac_key, { foo: 'bar' })
+// console.log(obj) /* => {
+//   foo: 'bar',
+//   signature: ...
+// } */
+// ssbkeys.verifyObj(k, hmac_key, obj) // => true

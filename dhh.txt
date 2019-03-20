@@ -1,0 +1,18 @@
+# this is your SECRET name.
+# this name gives you magical powers.
+# with it you can mark your messages so that your friends can verify
+# that they really did come from you.
+#
+# if any one learns this name, they can use it to destroy your identity
+# NEVER show this to anyone!!!
+
+{
+  "curve": "ed25519",
+  "public": "bJ7Q3I7JUrrsHiX0ZWLi3Jr1P3GIXt+/lK4zCIgF7K8=.ed25519",
+  "private": "bS4ZqcCjZLX8jX5qkgoiIusPYRz9moZvCavUzSD/+HdsntDcjslSuuweJfRlYuLcmvU/cYhe37+UrjMIiAXsrw==.ed25519",
+  "id": "@bJ7Q3I7JUrrsHiX0ZWLi3Jr1P3GIXt+/lK4zCIgF7K8=.ed25519"
+}
+
+# WARNING! It's vital that you DO NOT edit OR share your secret name
+# instead, share your public name
+# your public name: @bJ7Q3I7JUrrsHiX0ZWLi3Jr1P3GIXt+/lK4zCIgF7K8=.ed25519
